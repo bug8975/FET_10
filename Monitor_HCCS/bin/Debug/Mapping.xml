@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping>
-  <DEVICE>FET-2000A</DEVICE>
-  <VER>7.3S0.bin</VER>
+  <DEVICE>FET-EX50</DEVICE>
+  <VER>7.3N0.bin</VER>
   <FET-EX30>
     <depth>30</depth>
     <name>ex30</name>

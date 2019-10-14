@@ -669,5 +669,25 @@ namespace Monitor_HCCS.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap 微信图片_20191014132243 {
+            get {
+                object obj = ResourceManager.GetObject("微信图片_20191014132243", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap 微信图片_20191014140601 {
+            get {
+                object obj = ResourceManager.GetObject("微信图片_20191014140601", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

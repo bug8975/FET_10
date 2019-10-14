@@ -1,5 +1,3 @@
-F:\WorkSpace\copy\Monitor_HCCS - 十寸屏版本\Monitor_HCCS\bin\Debug\Monitor_HCCS.exe.config
-F:\WorkSpace\copy\Monitor_HCCS - 十寸屏版本\Monitor_HCCS\obj\Debug\FET.csproj.ResolveComReference.cache
 F:\WorkSpace\copy\Monitor_HCCS - 十寸屏版本\Monitor_HCCS\bin\Debug\Config\Skin\bg\bg01.jpg
 F:\WorkSpace\copy\Monitor_HCCS - 十寸屏版本\Monitor_HCCS\bin\Debug\Config\Skin\bg\bg02.jpg
 F:\WorkSpace\copy\Monitor_HCCS - 十寸屏版本\Monitor_HCCS\bin\Debug\Config\Skin\bg\bg03.jpg
@@ -22,6 +20,7 @@ F:\WorkSpace\copy\Monitor_HCCS - 十寸屏版本\Monitor_HCCS\bin\Debug\Sounds\l
 F:\WorkSpace\copy\Monitor_HCCS - 十寸屏版本\Monitor_HCCS\bin\Debug\Sounds\normal.wav
 F:\WorkSpace\copy\Monitor_HCCS - 十寸屏版本\Monitor_HCCS\bin\Debug\Sounds\savanna.wav
 F:\WorkSpace\copy\Monitor_HCCS - 十寸屏版本\Monitor_HCCS\bin\Debug\Sounds\sonata.wav
+F:\WorkSpace\copy\Monitor_HCCS - 十寸屏版本\Monitor_HCCS\bin\Debug\Monitor_HCCS.exe.config
 F:\WorkSpace\copy\Monitor_HCCS - 十寸屏版本\Monitor_HCCS\bin\Debug\Monitor_HCCS.exe
 F:\WorkSpace\copy\Monitor_HCCS - 十寸屏版本\Monitor_HCCS\bin\Debug\Monitor_HCCS.pdb
 F:\WorkSpace\copy\Monitor_HCCS - 十寸屏版本\Monitor_HCCS\bin\Debug\BenNHForm.dll
@@ -49,6 +48,7 @@ F:\WorkSpace\copy\Monitor_HCCS - 十寸屏版本\Monitor_HCCS\bin\Debug\SimpleUp
 F:\WorkSpace\copy\Monitor_HCCS - 十寸屏版本\Monitor_HCCS\bin\Debug\System.Data.SQLite.xml
 F:\WorkSpace\copy\Monitor_HCCS - 十寸屏版本\Monitor_HCCS\bin\Debug\en\SimpleUpdater.resources.dll
 F:\WorkSpace\copy\Monitor_HCCS - 十寸屏版本\Monitor_HCCS\obj\Debug\FET.csprojResolveAssemblyReference.cache
+F:\WorkSpace\copy\Monitor_HCCS - 十寸屏版本\Monitor_HCCS\obj\Debug\FET.csproj.ResolveComReference.cache
 F:\WorkSpace\copy\Monitor_HCCS - 十寸屏版本\Monitor_HCCS\obj\Debug\Monitor_HCCS.Properties.Resources.resources
 F:\WorkSpace\copy\Monitor_HCCS - 十寸屏版本\Monitor_HCCS\obj\Debug\Monitor_HCCS.View.Base.BaseForm.resources
 F:\WorkSpace\copy\Monitor_HCCS - 十寸屏版本\Monitor_HCCS\obj\Debug\Monitor_HCCS.DevBaseForm.resources

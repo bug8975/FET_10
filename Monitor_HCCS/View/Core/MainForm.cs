@@ -650,13 +650,13 @@ namespace Monitor_HCCS.View
 
         public static void writefile(string lines)
         {
-            using (FileStream fs = File.Open(@"C:\图片切换耗时.txt", FileMode.Append, FileAccess.Write, FileShare.Write))
-            {
-                using (System.IO.StreamWriter file = new System.IO.StreamWriter(fs))
-                {
-                    file.WriteLine(lines);// 直接追加文件末尾，换行 
-                }
-            }
+            //using (FileStream fs = File.Open(@"C:\图片切换耗时.txt", FileMode.Append, FileAccess.Write, FileShare.Write))
+            //{
+            //    using (System.IO.StreamWriter file = new System.IO.StreamWriter(fs))
+            //    {
+            //        file.WriteLine(lines);// 直接追加文件末尾，换行 
+            //    }
+            //}
 
 
         }

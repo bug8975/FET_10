@@ -69,7 +69,7 @@ namespace Monitor_HCCS.Presenter
                 File.Delete("Setup.exe");
             if (updater == null)
             {
-                updater = Updater.CreateUpdaterInstance("http://47.102.136.78:8888/Win10APPS/{0}", "update_c.xml");
+                updater = Updater.CreateUpdaterInstance("http://47.102.136.78:8888/Win10APPS/TBGY/{0}", "update_c.xml");
                 updater.Error += (s, e) => { Log4netHelper.Error(updater.Context.Exception); _setupForm.ShowToast_InSetup("更新发生了错误：", updater.Context.Exception.Message, 1); };
                 updater.UpdatesFound += (s, e) => { _setupForm.ShowToast_InSetup("发现了新版本：", updater.Context.UpdateInfo.AppVersion, 1); };
                 updater.NoUpdatesFound += (s, e) => { _setupForm.ShowToast_InSetup("提示", "没有新版本！", 1); };

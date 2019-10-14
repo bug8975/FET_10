@@ -136,11 +136,14 @@
   <data name="logo_1920x10801" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logo_1920x10801.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dange" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\dange.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="listviewBG" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\listviewBG.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="DataPicture" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DataPicture.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Output3D" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Output3D.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="hotPicture" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\hotPicture.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -159,6 +162,9 @@
   </data>
   <data name="insert" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\insert.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="devPicture" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\devPicture.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="关机1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\关机1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -190,12 +196,6 @@
   <data name="dange1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\dange1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="MainForm" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\MainForm.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="listviewBG" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\listviewBG.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="微信图片_20190830183828" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\微信图片_20190830183828.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -208,8 +208,8 @@
   <data name="data3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\data3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="logo_1920x1080" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\logo_1920x1080.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="dange" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dange.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="微信图片_20190830171649" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\微信图片_20190830171649.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -229,8 +229,11 @@
   <data name="new" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\new.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="OutputPicture" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\OutputPicture.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="logo_1920x1080" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logo_1920x1080.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SetupPicture" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SetupPicture.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="updata" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\updata.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -253,14 +256,17 @@
   <data name="S1img" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\S1img.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Output3D" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Output3D.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="OutputPicture" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OutputPicture.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="LinePicture" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\LinePicture.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="微信图片_20190830183832" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\微信图片_20190830183832.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="微信图片_20191014132243" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\微信图片_20191014132243.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="DeletePicture" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DeletePicture.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -292,13 +298,13 @@
   <data name="setup1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\setup1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="devPicture" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\devPicture.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="SetupPicture" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SetupPicture.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="MainForm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="listviewBG1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\listviewBG1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="微信图片_20191014140601" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\微信图片_20191014140601.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

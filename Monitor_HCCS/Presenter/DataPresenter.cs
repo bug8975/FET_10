@@ -350,7 +350,11 @@ namespace Monitor_HCCS.Presenter
                 {
                     _Data.Bledata = ConvertHelper.StringToByte(str);
                     _Data.SendByList.AddRange(_Data.Bledata);
-                    int num = Convert.ToInt32(XmlHelper.getValue("dataCount"));
+                    int num = 0;
+                    if(_DataForm.InfoName == null)
+                        num = Convert.ToInt32(XmlHelper.getValue("dataCount"));
+                    else
+                        num = Convert.ToInt32(XmlHelper.getValue(_DataForm.InfoName, "dataCount"));
                     if (_Data.SendByList.Count > num)
                     {
                         _Data.SendByList = new System.Collections.Generic.List<byte>();

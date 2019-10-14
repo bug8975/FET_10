@@ -101,17 +101,28 @@ namespace Monitor_HCCS.View.Dialog
         {
             if (this.IsHandleCreated)
                 this.BeginInvoke(new Action(() => { new ToastNotifications.Notification(title, body, time, ToastNotifications.FormAnimator.AnimationMethod.Slide, ToastNotifications.FormAnimator.AnimationDirection.Up).Show(); }));
+            else
+                new ToastNotifications.Notification(title, body, time, ToastNotifications.FormAnimator.AnimationMethod.Slide, ToastNotifications.FormAnimator.AnimationDirection.Up).Show();
         }
 
         //下载进度条服务
         public void ProgressSer(int quantity)
         {
-            this.Invoke(new Action(() =>
+            if (this.IsHandleCreated)
+            {
+                this.Invoke(new Action(() =>
+                {
+                    progressBarControl1.Visible = true;
+                    simpleButton3.Visible = false;
+                    progressBarControl1.Position = quantity;
+                }));
+            }
+            else
             {
                 progressBarControl1.Visible = true;
                 simpleButton3.Visible = false;
                 progressBarControl1.Position = quantity;
-            }));
+            }
         }
 
         //固件更新进度条服务
@@ -124,6 +135,11 @@ namespace Monitor_HCCS.View.Dialog
                     progressBarControl2.Visible = true;
                     progressBarControl2.Position = quantity;
                 }));
+            else
+            {
+                progressBarControl2.Visible = true;
+                progressBarControl2.Position = quantity;
+            }
         }
 
         //下载进度条  &&  按钮UI改变服务
@@ -135,6 +151,11 @@ namespace Monitor_HCCS.View.Dialog
                     progressBarControl1.Position = 0;
                     progressBarControl1.Visible = false;
                 }));
+            else
+            {
+                progressBarControl1.Position = 0;
+                progressBarControl1.Visible = false;
+            }
         }
 
         //固件更新进度条  &&  按钮UI改变服务
@@ -147,6 +168,12 @@ namespace Monitor_HCCS.View.Dialog
                     progressBarControl2.Visible = false;
                     simpleButton3.Visible = true;
                 }));
+            else
+            {
+                progressBarControl2.Position = 0;
+                progressBarControl2.Visible = false;
+                simpleButton3.Visible = true;
+            }
         }
 
         //更新状态文本服务
@@ -154,6 +181,10 @@ namespace Monitor_HCCS.View.Dialog
         {
             if (this.IsHandleCreated)
                 this.Invoke(new Action(() => { labelControl4.Text = msg; simpleButton3.Text = "开始升级"; simpleButton3.Visible = true; }));
+            else
+            {
+                labelControl4.Text = msg; simpleButton3.Text = "开始升级"; simpleButton3.Visible = true;
+            }
         }
 
         //设置版本号等显示内容
@@ -161,6 +192,10 @@ namespace Monitor_HCCS.View.Dialog
         {
             if (this.IsHandleCreated)
                 this.Invoke(new Action(() => { labelControl3.Text = msg; simpleButton3.Visible = true; }));
+            else
+            {
+                labelControl3.Text = msg; simpleButton3.Visible = true;
+            }
         }
 
         //固件升级按钮UI状态管理
@@ -168,6 +203,8 @@ namespace Monitor_HCCS.View.Dialog
         {
             if (this.IsHandleCreated)
                 this.Invoke(new Action(() => { simpleButton3.Visible = b; }));
+            else
+                simpleButton3.Visible = b;
         }
 
         public void ReFlush()
@@ -180,6 +217,10 @@ namespace Monitor_HCCS.View.Dialog
                     {
                         labelControl2.Text = XmlHelper.getVer("DEVICE");
                     }), new object[] { null });
+                }
+                else
+                {
+                    labelControl2.Text = XmlHelper.getVer("DEVICE");
                 }
             });
         }

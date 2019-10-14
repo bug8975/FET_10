@@ -25,18 +25,34 @@ namespace Monitor_HCCS.Common
             {
                 if (gears.Equals("100"))
                 {
-                    axisw = 900;
+                    axisw = 908;
+                    if(pointNum >=110)
+                    {
+                        int ceil = Convert.ToInt32(Math.Ceiling((pointNum - 110) * 0.8));
+                        axisw = 908 - ceil;
+                    }
                 }
                 else if (gears.Equals("200"))
                 {
                     axisw = 910;
+                    if (pointNum >= 40)
+                    {
+                        int ceil = Convert.ToInt32(Math.Ceiling((pointNum - 40) * 0.0));
+                        axisw = 915 - ceil;
+                    }
+                    if (pointNum >= 210)
+                    {
+                        int ceil = Convert.ToInt32(Math.Ceiling((pointNum - 210) * 0.0));
+                        axisw = 913 - ceil;
+                    }
                 }
                 else
                 {
+                    axisw = 916;
                     if (pointNum <= 20)
+                        axisw = 916;
+                    if (pointNum > 30)
                         axisw = 920;
-                    if (pointNum > 20)
-                        axisw = 918;
                 }
             }
             #endregion
@@ -51,6 +67,8 @@ namespace Monitor_HCCS.Common
                 else if (gears.Equals("300"))
                 {
                     axisw = 915;
+                    if (pointNum >= 30)
+                        axisw = 917;
                 }
                 else
                 {
@@ -63,7 +81,9 @@ namespace Monitor_HCCS.Common
                     if (pointNum == 13)
                         axisw = 894;
                     if (pointNum >= 14)
-                        axisw = 890;
+                        axisw = 894;
+                    if (pointNum >= 70)
+                        axisw = 896;
                 }                
             }
             #endregion
@@ -82,6 +102,8 @@ namespace Monitor_HCCS.Common
                         axisw = 900;
                     if (pointNum > 12)
                         axisw = 890;
+                    if (pointNum >= 30)
+                        axisw = 892;
                 }
                 else
                 {
@@ -103,6 +125,10 @@ namespace Monitor_HCCS.Common
                     if (pointNum > 17)
                     {
                         axisw = 870;
+                    }
+                    if (pointNum > 40)
+                    {
+                        axisw = 873;
                     }
                 }
                 
@@ -126,30 +152,47 @@ namespace Monitor_HCCS.Common
                 }
                 else
                 {
-                    if (pointNum <= 20)
-                        axisw = 920;
-                    if (pointNum > 20)
-                        axisw = 918;
+                    axisw = 911;
+                    if (pointNum == 11)
+                        axisw = 905;
+                    if (pointNum == 12)
+                        axisw = 898;
+                    if (pointNum == 13)
+                        axisw = 891;
+                    if (pointNum == 14)
+                        axisw = 883;
+                    if (pointNum == 15)
+                        axisw = 877;
+                    if (pointNum == 16)
+                        axisw = 870;
+                    if (pointNum == 17)
+                        axisw = 863;
+                    if (pointNum == 18)
+                        axisw = 855;
+                    if (pointNum >= 19)
+                        axisw = 849;
+                    if (pointNum >= 30 && pointNum < 60)
+                    {
+                        int ceil = Convert.ToInt32(Math.Ceiling((pointNum - 30) * 0.00));
+                        axisw = 850 + ceil;
+                    }
+                    if (pointNum >= 60)
+                    {
+                        int ceil = Convert.ToInt32(Math.Ceiling((pointNum - 60) * 0.00));
+                        axisw = 853 + ceil;
+                    }
+                    if (pointNum >= 250 && pointNum < 260)
+                    {
+                        int ceil = Convert.ToInt32(Math.Ceiling((pointNum - 250) * 0.50));
+                        axisw = 853 - ceil;
+                    }
+                    if (pointNum >= 260)
+                    {
+                        int ceil = Convert.ToInt32(Math.Ceiling((pointNum - 60) * 0.00));
+                        axisw = 850 + ceil;
+                    }
                 }
-                axisw = 911;
-                if (pointNum == 11)
-                    axisw = 905;
-                if (pointNum == 12)
-                    axisw = 898;
-                if (pointNum == 13)
-                    axisw = 891;
-                if (pointNum == 14)
-                    axisw = 883;
-                if (pointNum == 15)
-                    axisw = 877;
-                if (pointNum == 16)
-                    axisw = 870;
-                if (pointNum == 17)
-                    axisw = 863;
-                if (pointNum == 18)
-                    axisw = 855;
-                if (pointNum >= 19)
-                    axisw = 849;
+                
             }
             #endregion
 
@@ -201,12 +244,14 @@ namespace Monitor_HCCS.Common
                          axisw = 815;
                      if (pointNum == 25)
                          axisw = 812;
-                     if (pointNum == 26)
-                         axisw = 807;
-                     if (pointNum == 27)
-                         axisw = 807;
-                     if (pointNum >= 28)
-                         axisw = 807;
+                     if (pointNum >= 26)
+                         axisw = 862;
+                     if (pointNum >= 70)
+                         axisw = 863;
+                     if (pointNum >= 230 && pointNum < 240)
+                         axisw = 859;
+                     if (pointNum >= 240)
+                         axisw = 863;
                  }
             }
             #endregion
@@ -249,6 +294,16 @@ namespace Monitor_HCCS.Common
                     {
                         axisw = 850;
                     }
+                    if (pointNum >= 20 && pointNum < 30)
+                    {
+                        int ceil = Convert.ToInt32(Math.Ceiling((pointNum - 20) * 0.0));
+                        axisw = 891 - ceil;
+                    }
+                    if (pointNum >= 30)
+                    {
+                        int ceil = Convert.ToInt32(Math.Ceiling((pointNum - 20) * 0.0));
+                        axisw = 938 - ceil;
+                    }
                 }
                 else
                 {
@@ -271,34 +326,61 @@ namespace Monitor_HCCS.Common
                         axisw = 855;
                     if (pointNum == 19)
                         axisw = 849;
-                    if (pointNum == 20)
-                        axisw = 842;
-                    if (pointNum == 21)
-                        axisw = 836;
-                    if (pointNum == 22)
-                        axisw = 829;
-                    if (pointNum == 23)
-                        axisw = 823;
-                    if (pointNum == 24)
-                        axisw = 815;
-                    if (pointNum == 25)
-                        axisw = 812;
-                    if (pointNum == 26)
-                        axisw = 803;
-                    if (pointNum == 27)
-                        axisw = 797;
-                    if (pointNum >= 28)
-                        axisw = 792;
-                    if (pointNum == 29)
-                        axisw = 785;
-                    if (pointNum == 30)
-                        axisw = 778;
-                    if (pointNum == 31)
-                        axisw = 775;
-                    if (pointNum == 32)
-                        axisw = 773;
-                    if (pointNum >= 33)
-                        axisw = 773;
+                    if (pointNum >= 20 && pointNum < 30)
+                    {
+                        int ceil = Convert.ToInt32(Math.Ceiling((pointNum - 20) * 5.0));
+                        axisw = 887 - ceil;
+                    }
+                    if (pointNum >= 30 && pointNum <35)
+                    {
+                        int ceil = Convert.ToInt32(Math.Ceiling((pointNum - 30) * 1.4));
+                        axisw = 906 - ceil;
+                    }
+                    if (pointNum >= 35 && pointNum < 190)
+                    {
+                        axisw = 903;
+                    }
+                    if (pointNum >= 190)
+                    {
+                        int ceil = Convert.ToInt32(Math.Ceiling((pointNum - 200) * 0.18));
+                        axisw = 898 + ceil;
+                    }
+                    if (pointNum >= 190 && pointNum < 230)
+                    {
+                        int ceil = Convert.ToInt32(Math.Ceiling((pointNum - 200) * 0.18));
+                        axisw = 898 + ceil;
+                    }
+                    if (pointNum >= 230)
+                    {
+                        int ceil = Convert.ToInt32(Math.Ceiling((pointNum - 200) * 0.00));
+                        axisw = 900;
+                    }
+                    //if (pointNum == 21)
+                    //    axisw = 836;
+                    //if (pointNum == 22)
+                    //    axisw = 829;
+                    //if (pointNum == 23)
+                    //    axisw = 823;
+                    //if (pointNum == 24)
+                    //    axisw = 815;
+                    //if (pointNum == 25)
+                    //    axisw = 812;
+                    //if (pointNum == 26)
+                    //    axisw = 803;
+                    //if (pointNum == 27)
+                    //    axisw = 797;
+                    //if (pointNum >= 28)
+                    //    axisw = 792;
+                    //if (pointNum == 29)
+                    //    axisw = 785;
+                    //if (pointNum == 30)
+                    //    axisw = 778;
+                    //if (pointNum == 31)
+                    //    axisw = 775;
+                    //if (pointNum == 32)
+                    //    axisw = 773;
+                    //if (pointNum >= 33)
+                    //    axisw = 773;
                 }
                 
             }
@@ -354,58 +436,81 @@ namespace Monitor_HCCS.Common
                         axisw = 891;
                     if (pointNum == 14)
                         axisw = 883;
-                    if (pointNum == 15)
-                        axisw = 877;
-                    if (pointNum == 16)
-                        axisw = 870;
-                    if (pointNum == 17)
-                        axisw = 863;
-                    if (pointNum == 18)
-                        axisw = 855;
-                    if (pointNum == 19)
-                        axisw = 849;
-                    if (pointNum == 20)
-                        axisw = 842;
-                    if (pointNum == 21)
-                        axisw = 836;
-                    if (pointNum == 22)
-                        axisw = 829;
-                    if (pointNum == 23)
-                        axisw = 823;
-                    if (pointNum == 24)
-                        axisw = 815;
-                    if (pointNum == 25)
-                        axisw = 812;
-                    if (pointNum == 26)
-                        axisw = 803;
-                    if (pointNum == 27)
-                        axisw = 797;
-                    if (pointNum >= 28)
-                        axisw = 792;
-                    if (pointNum == 29)
-                        axisw = 785;
-                    if (pointNum == 30)
-                        axisw = 778;
-                    if (pointNum == 31)
-                        axisw = 775;
-                    if (pointNum == 32)
-                        axisw = 770;
-                    if (pointNum >= 33)
-                        axisw = 765;
-                    if (pointNum == 34)
-                        axisw = 759;
-                    if (pointNum == 35)
-                        axisw = 754;
-                    if (pointNum == 36)
-                        axisw = 747;
-                    if (pointNum >= 37)
-                        axisw = 742;
-                    if (pointNum == 38)
-                        axisw = 739;
-                    if (pointNum == 39)
-                        axisw = 739;
+                    if (pointNum >= 15 && pointNum < 30)
+                    {
+                        int ceil = Convert.ToInt32(Math.Ceiling((pointNum - 15) * 5.2));
+                        axisw = 914 - ceil;
+                    }
+                    if (pointNum >= 30)
+                    {
+                        int ceil = Convert.ToInt32(Math.Ceiling((pointNum - 30) * 2.1));
+                        axisw = 906 - ceil;
+                    }
                     if (pointNum >= 40)
-                        axisw = 739;
+                    {
+                        int ceil = Convert.ToInt32(Math.Ceiling((pointNum - 40) * 0.0));
+                        axisw = 886 - ceil;
+                    }
+                    if (pointNum >= 140)
+                    {
+                        int ceil = Convert.ToInt32(Math.Ceiling((pointNum - 118) * 0.0));
+                        axisw = 883 - ceil;
+                    }
+                    if (pointNum >= 190)
+                    {
+                        int ceil = Convert.ToInt32(Math.Ceiling((pointNum - 190) * 0.0));
+                        axisw = 887 - ceil;
+                    }
+                    //if (pointNum == 16)
+                    //    axisw = 870;
+                    //if (pointNum == 17)
+                    //    axisw = 863;
+                    //if (pointNum == 18)
+                    //    axisw = 855;
+                    //if (pointNum == 19)
+                    //    axisw = 849;
+                    //if (pointNum == 20)
+                    //    axisw = 842;
+                    //if (pointNum == 21)
+                    //    axisw = 836;
+                    //if (pointNum == 22)
+                    //    axisw = 829;
+                    //if (pointNum == 23)
+                    //    axisw = 823;
+                    //if (pointNum == 24)
+                    //    axisw = 815;
+                    //if (pointNum == 25)
+                    //    axisw = 812;
+                    //if (pointNum == 26)
+                    //    axisw = 803;
+                    //if (pointNum == 27)
+                    //    axisw = 797;
+                    //if (pointNum >= 28)
+                    //    axisw = 792;
+                    //if (pointNum == 29)
+                    //    axisw = 785;
+                    //if (pointNum == 30)
+                    //    axisw = 778;
+                    //if (pointNum == 31)
+                    //    axisw = 775;
+                    //if (pointNum == 32)
+                    //    axisw = 770;
+                    //if (pointNum >= 33)
+                    //    axisw = 765;
+                    //if (pointNum == 34)
+                    //    axisw = 759;
+                    //if (pointNum == 35)
+                    //    axisw = 754;
+                    //if (pointNum == 36)
+                    //    axisw = 747;
+                    //if (pointNum >= 37)
+                    //    axisw = 742;
+                    //if (pointNum == 38)
+                    //    axisw = 739;
+                    //if (pointNum == 39)
+                    //    axisw = 739;
+                    //if (pointNum >= 40)
+                    //    axisw = 739;
                 }
                 
             }
@@ -452,116 +557,57 @@ namespace Monitor_HCCS.Common
             #region 3000A
             if ("R".Equals(flag))
             {
-                axisw = 911;
-                if (pointNum == 11)
-                    axisw = 905;
-                if (pointNum == 12)
-                    axisw = 898;
-                if (pointNum == 13)
-                    axisw = 891;
-                if (pointNum == 14)
-                    axisw = 883;
-                if (pointNum == 15)
-                    axisw = 877;
-                if (pointNum == 16)
-                    axisw = 870;
-                if (pointNum == 17)
-                    axisw = 863;
-                if (pointNum == 18)
-                    axisw = 855;
-                if (pointNum == 19)
-                    axisw = 849;
-                if (pointNum == 20)
-                    axisw = 842;
-                if (pointNum == 21)
-                    axisw = 836;
-                if (pointNum == 22)
-                    axisw = 829;
-                if (pointNum == 23)
-                    axisw = 823;
-                if (pointNum == 24)
-                    axisw = 815;
-                if (pointNum == 25)
-                    axisw = 812;
-                if (pointNum == 26)
-                    axisw = 803;
-                if (pointNum == 27)
-                    axisw = 797;
-                if (pointNum == 28)
-                    axisw = 792;
-                if (pointNum == 29)
-                    axisw = 785;
-                if (pointNum == 30)
-                    axisw = 778;
-                if (pointNum == 31)
-                    axisw = 775;
-                if (pointNum == 32)
-                    axisw = 770;
-                if (pointNum == 33)
-                    axisw = 765;
-                if (pointNum == 34)
-                    axisw = 759;
-                if (pointNum == 35)
-                    axisw = 754;
-                if (pointNum == 36)
-                    axisw = 747;
-                if (pointNum == 37)
-                    axisw = 742;
-                if (pointNum == 38)
-                    axisw = 736;
-                if (pointNum == 39)
-                    axisw = 733;
-                if (pointNum == 40)
-                    axisw = 729;
-                if (pointNum == 41)
-                    axisw = 723;
-                if (pointNum == 42)
-                    axisw = 717;
-                if (pointNum == 43)
-                    axisw = 714;
-                if (pointNum == 44)
-                    axisw = 708;
-                if (pointNum == 45)
-                    axisw = 703;
-                if (pointNum == 46)
-                    axisw = 699;
-                if (pointNum == 47)
-                    axisw = 693;
-                if (pointNum == 48)
-                    axisw = 691;
-                if (pointNum == 49)
-                    axisw = 686;
-                if (pointNum == 50)
-                    axisw = 681;
-                if (pointNum == 51)
-                    axisw = 676;
-                if (pointNum == 52)
-                    axisw = 673;
-                if (pointNum == 53)
-                    axisw = 670;
-                if (pointNum == 54)
-                    axisw = 665;
-                if (pointNum == 55)
-                    axisw = 660;
-                if (pointNum == 56)
-                    axisw = 656;
-                if (pointNum >= 56 & pointNum <= 80)
+                axisw = 928;
+                if (pointNum >= 10 & pointNum <= 15)
                 {
-                    int ceil = Convert.ToInt32(Math.Ceiling((pointNum - 56) * 3.5333));
-                    axisw = 656 - ceil;
+                    int ceil = Convert.ToInt32(Math.Ceiling((pointNum - 10) * 7.0));
+                    axisw = 928 - ceil;
                 }
-                if (pointNum >= 80 && pointNum <= 90)
+                if (pointNum >= 15 & pointNum <= 20)
                 {
-                    int ceil = (pointNum - 80) * 3;
-                    axisw = 573 - ceil;
+                    int ceil = Convert.ToInt32(Math.Ceiling((pointNum - 15) * 5.0));
+                    axisw = 893 - ceil;
                 }
-                if (pointNum > 90 && pointNum <= 110)
+                if (pointNum >= 21)
                 {
-                    int ceil = (pointNum - 90) * 1;
-                    axisw = 544 - ceil;
+                    int ceil = Convert.ToInt32(Math.Ceiling((pointNum - 21) * 3.0));
+                    axisw = 919 - ceil;
                 }
-                if (pointNum > 110)
-                    axisw = 514;
+                if (pointNum >= 26)
+                {
+                    int ceil = Convert.ToInt32(Math.Ceiling((pointNum - 26) * 3.5));
+                    axisw = 904 - ceil;
+                }
+                if (pointNum >= 31)
+                {
+                    int ceil = Convert.ToInt32(Math.Ceiling((pointNum - 31) * 2.0));
+                    axisw = 939 - ceil;
+                }
+                if (pointNum >= 45)
+                {
+                    int ceil = Convert.ToInt32(Math.Ceiling((pointNum - 45) * 1.5));
+                    axisw = 913 - ceil;
+                }
+                if (pointNum >= 50)
+                {
+                    int ceil = Convert.ToInt32(Math.Ceiling((pointNum - 50) * 2.0));
+                    axisw = 906 - ceil;
+                }
+                if (pointNum >= 61)
+                {
+                    int ceil = Convert.ToInt32(Math.Ceiling((pointNum - 60) * 1.0));
+                    axisw = 940 - ceil;
+                }
+                if (pointNum >= 90)
+                {
+                    int ceil = Convert.ToInt32(Math.Ceiling((pointNum - 90) * 0.33));
+                    axisw = 914 - ceil;
+                }
+                if (pointNum >= 110)
+                {
+                    int ceil = Convert.ToInt32(Math.Ceiling((pointNum - 110) * 0.00));
+                    axisw = 908 - ceil;
+                }
             }
             #endregion
 

@@ -333,6 +333,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\微信图片_20191014140601.jpg" />
+    <None Include="Resources\微信图片_20191014132243.jpg" />
     <None Include="Resources\listviewBG1.jpg" />
     <None Include="Resources\listviewBG.jpg" />
     <None Include="Resources\关机3.jpg" />
