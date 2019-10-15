@@ -181,6 +181,8 @@ namespace Monitor_HCCS.Common
                     return Regex.IsMatch(inputVal, @"^FET-(WT)?([1-9][0-9]{1,4})A$");  //匹配WT-A系列设备
                 case 10:
                     return Regex.IsMatch(inputVal, @"^FET-EX([1-9][0-9]{1,3})$");  //匹配EX系列设备
+                case 11:
+                    return Regex.IsMatch(inputVal, @"^FET-CT([1-9][0-9]{1,3})$");  //匹配CT系列设备
                 default:
                     return true;
             }

@@ -38,7 +38,12 @@ namespace Monitor_HCCS.Common.UIDataSource
             {"P", "ex80"},
             {"Q", "ex100"},
             {"R", "wt3000a"},
-            {"S", "wt2000a"}
+            {"S", "wt2000a"},
+            {"T", "ct30"},
+            {"U", "ct50"},
+            {"V", "ct60"},
+            {"W", "ct80"},
+            {"X", "ct100"}
         };
     }
 }

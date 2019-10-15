@@ -64,7 +64,7 @@ namespace Monitor_HCCS.Common.GeoProspector
 
             //色柱图基点
 
-            //EX系列
+            #region EX系列
             if (fet.Contains("M"))
             {
                 if (pointNum >= 50 && pointNum < 140)
@@ -197,6 +197,143 @@ namespace Monitor_HCCS.Common.GeoProspector
                     contour.ColorScale.Left = contour.Left + contour.Width + 0.001 * pointNum;
                 }
             }
+            #endregion
+
+            #region CT系列
+            if (fet.Contains("T"))
+            {
+                if (pointNum >= 50 && pointNum < 140)
+                {
+                    contour.ColorScale.Width = 0.006 * pointNum;
+                    contour.ColorScale.Left = contour.Left + contour.Width + 0.001 * pointNum;
+                    contour.ColorScale.Height = 1.2;
+                }
+                else if (pointNum >= 140 && pointNum < 210)
+                {
+                    contour.ColorScale.Width = 0.004 * pointNum;
+                    contour.ColorScale.Left = contour.Left + contour.Width + 0.0006 * pointNum;
+                    contour.ColorScale.Height = 0.6;
+                }
+                else if (pointNum >= 210)
+                {
+                    contour.ColorScale.Width = 0.0025 * pointNum;
+                    contour.ColorScale.Left = contour.Left + contour.Width + 0.0004 * pointNum;
+                    contour.ColorScale.Height = 0.4;
+                }
+                else
+                {
+                    contour.ColorScale.Width = 0.015 * pointNum;
+                    contour.ColorScale.Left = contour.Left + contour.Width + 0.002 * pointNum;
+                    contour.ColorScale.Height = 3.0;
+                }
+            }
+            else if (fet.Contains("U"))
+            {
+                if (pointNum >= 67 && pointNum < 140)
+                {
+                    contour.ColorScale.Width = 0.006 * pointNum;
+                    contour.ColorScale.Left = contour.Left + contour.Width + 0.001 * pointNum;
+                    contour.ColorScale.Height = 2.0;
+                }
+                else if (pointNum >= 140 && pointNum < 210)
+                {
+                    contour.ColorScale.Width = 0.004 * pointNum;
+                    contour.ColorScale.Left = contour.Left + contour.Width + 0.0006 * pointNum;
+                    contour.ColorScale.Height = 1.0;
+                }
+                else if (pointNum >= 210)
+                {
+                    contour.ColorScale.Width = 0.0025 * pointNum;
+                    contour.ColorScale.Left = contour.Left + contour.Width + 0.0004 * pointNum;
+                    contour.ColorScale.Height = 0.5;
+                }
+                else
+                {
+                    contour.ColorScale.Width = 0.009 * pointNum;
+                    contour.ColorScale.Left = contour.Left + contour.Width + 0.0012 * pointNum;
+                }
+
+            }
+            else if (fet.Contains("V"))
+            {
+                if (pointNum > 50 && pointNum < 140)
+                {
+                    contour.ColorScale.Width = 0.006 * pointNum;
+                    contour.ColorScale.Left = contour.Left + contour.Width + 0.001 * pointNum;
+                    contour.ColorScale.Height = 2.0;
+                }
+                else if (pointNum >= 140 && pointNum < 210)
+                {
+                    contour.ColorScale.Width = 0.004 * pointNum;
+                    contour.ColorScale.Left = contour.Left + contour.Width + 0.0006 * pointNum;
+                    contour.ColorScale.Height = 1.0;
+                }
+                else if (pointNum >= 210)
+                {
+                    contour.ColorScale.Width = 0.0025 * pointNum;
+                    contour.ColorScale.Left = contour.Left + contour.Width + 0.0004 * pointNum;
+                    contour.ColorScale.Height = 0.5;
+                }
+                else
+                {
+                    contour.ColorScale.Width = 0.009 * pointNum;
+                    contour.ColorScale.Left = contour.Left + contour.Width + 0.0012 * pointNum;
+                }
+            }
+            else if (fet.Contains("W"))
+            {
+                if (pointNum > 50 && pointNum < 140)
+                {
+                    contour.ColorScale.Width = 0.006 * pointNum;
+                    contour.ColorScale.Left = contour.Left + contour.Width + 0.001 * pointNum;
+                    contour.ColorScale.Height = 2.0;
+                }
+                else if (pointNum >= 140 && pointNum < 210)
+                {
+                    contour.ColorScale.Width = 0.004 * pointNum;
+                    contour.ColorScale.Left = contour.Left + contour.Width + 0.0006 * pointNum;
+                    contour.ColorScale.Height = 1.0;
+                }
+                else if (pointNum >= 210)
+                {
+                    contour.ColorScale.Width = 0.0025 * pointNum;
+                    contour.ColorScale.Left = contour.Left + contour.Width + 0.0004 * pointNum;
+                    contour.ColorScale.Height = 1.0;
+                }
+                else
+                {
+                    contour.ColorScale.Width = 0.009 * pointNum;
+                    contour.ColorScale.Left = contour.Left + contour.Width + 0.0012 * pointNum;
+                }
+            }
+            else if (fet.Contains("X"))
+            {
+                if (pointNum >= 50 && pointNum < 140)
+                {
+                    contour.ColorScale.Width = 0.006 * pointNum;
+                    contour.ColorScale.Left = contour.Left + contour.Width + 0.001 * pointNum;
+                    contour.ColorScale.Height = 2.0;
+                }
+                else if (pointNum >= 140 && pointNum < 210)
+                {
+                    contour.ColorScale.Width = 0.004 * pointNum;
+                    contour.ColorScale.Left = contour.Left + contour.Width + 0.0006 * pointNum;
+                    contour.ColorScale.Height = 1.0;
+                }
+                else if (pointNum >= 210)
+                {
+                    contour.ColorScale.Width = 0.0025 * pointNum;
+                    contour.ColorScale.Left = contour.Left + contour.Width + 0.0004 * pointNum;
+                    contour.ColorScale.Height = 1.0;
+                }
+                else
+                {
+                    contour.ColorScale.Width = 0.005 * pointNum;
+                    contour.ColorScale.Left = contour.Left + contour.Width + 0.001 * pointNum;
+                }
+            }
+            #endregion
+
             //2000A
             else if (fet.Contains("S"))
             {

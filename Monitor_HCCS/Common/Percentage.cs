@@ -861,6 +861,256 @@ namespace Monitor_HCCS.Common
             }
             #endregion
 
+            #region CT30
+            //CT30
+            if ("T".Equals(flag))
+            {
+                axisw = 920;//
+                if (pointNum >= 32)
+                {
+                    axisw = 910;
+                }
+                if (pointNum >= 36)
+                {
+                    axisw = 900;
+                }
+                if (pointNum >= 41)
+                {
+                    axisw = 890;
+                }
+                if (pointNum >= 46 && pointNum < 50)
+                {
+                    axisw = 877;
+                }
+                if (pointNum >= 50 && pointNum <= 60)
+                {
+                    int ceil = Convert.ToInt32(Math.Ceiling((pointNum - 50) * 1.3));
+                    axisw = 944 - ceil;
+                }
+                if (pointNum > 60 && pointNum <= 70)
+                {
+                    int ceil = Convert.ToInt32(Math.Ceiling((pointNum - 50) * 1.15));
+                    axisw = 944 - ceil;
+                }
+                if (pointNum > 70 && pointNum <= 80)
+                {
+                    int ceil = Convert.ToInt32(Math.Ceiling((pointNum - 50) * 1.0));
+                    axisw = 944 - ceil;
+                }
+                if (pointNum > 80 && pointNum <= 110)
+                {
+                    int ceil = Convert.ToInt32(Math.Ceiling((pointNum - 50) * 1.0));
+                    axisw = 944 - ceil;
+                }
+                if (pointNum > 110 && pointNum < 140)
+                {
+                    int ceil = Convert.ToInt32(Math.Ceiling((pointNum - 50) * 0.95));
+                    axisw = 944 - ceil;
+                }
+                if (pointNum >= 140 && pointNum < 210)
+                {
+                    int ceil = Convert.ToInt32(Math.Ceiling((pointNum - 140) * 0.6));
+                    axisw = 902 - ceil;
+                }
+                if (pointNum >= 210 && pointNum <= 300)
+                {
+                    int ceil = Convert.ToInt32(Math.Ceiling((pointNum - 210) * 0.35));
+                    axisw = 906 - ceil;
+                }
+            }
+            #endregion
+
+            #region CT50
+            //CT50
+            if ("U".Equals(flag))
+            {
+                axisw = 915;//
+                if (pointNum >= 18)
+                    axisw = 920;
+                if (pointNum >= 36)
+                    axisw = 922;
+                if (pointNum >= 52)
+                    axisw = 919;
+                if (pointNum >= 54)
+                    axisw = 916;
+                if (pointNum >= 57)
+                    axisw = 912;
+                if (pointNum >= 59)
+                    axisw = 908;
+                if (pointNum >= 62)
+                    axisw = 908 - (pointNum - 59);
+                if (pointNum >= 67)
+                {
+                    int ceil = Convert.ToInt32(Math.Ceiling((pointNum - 67) * 2.0));
+                    axisw = 927 - ceil;
+                }
+                if (pointNum >= 73)
+                {
+                    int ceil = Convert.ToInt32(Math.Ceiling((pointNum - 67) * 1.00));
+                    axisw = 927 - ceil;
+                }
+                if (pointNum >= 98)
+                {
+                    int ceil = Convert.ToInt32(Math.Ceiling((pointNum - 67) * 0.90));
+                    axisw = 927 - ceil;
+                }
+                if (pointNum >= 120)
+                {
+                    int ceil = Convert.ToInt32(Math.Ceiling((pointNum - 67) * 0.90));
+                    axisw = 927 - ceil;
+                }
+                if (pointNum >= 140)
+                {
+                    int ceil = Convert.ToInt32(Math.Ceiling((pointNum - 140) * 0.70));
+                    axisw = 903 - ceil;
+                }
+                if (pointNum >= 180)
+                {
+                    int ceil = Convert.ToInt32(Math.Ceiling((pointNum - 140) * 0.60));
+                    axisw = 903 - ceil;
+                }
+                if (pointNum >= 210)
+                {
+                    int ceil = Convert.ToInt32(Math.Ceiling((pointNum - 210) * 0.60));
+                    axisw = 908 - ceil;
+                }
+                if (pointNum >= 250)
+                {
+                    int ceil = Convert.ToInt32(Math.Ceiling((pointNum - 210) * 0.40));
+                    axisw = 908 - ceil;
+                }
+            }
+            #endregion
+
+            #region CT60
+            //CT60
+            if ("V".Equals(flag))
+            {
+                axisw = 900;//
+                if (pointNum >= 10)
+                {
+                    int ceil = Convert.ToInt32(Math.Ceiling((pointNum - 10) * 0.2));
+                    axisw = 900 + ceil;
+                }
+                if (pointNum >= 50 && pointNum <= 60)
+                {
+                    int ceil = Convert.ToInt32(Math.Ceiling((pointNum - 50) * 0.0));
+                    axisw = 935 + ceil;
+                }
+                if (pointNum > 60 && pointNum < 140)
+                {
+                    int ceil = Convert.ToInt32(Math.Ceiling((pointNum - 60) * 1.00));
+                    axisw = 935 - ceil;
+                }
+                if (pointNum >= 140 && pointNum < 210)
+                {
+                    int ceil = Convert.ToInt32(Math.Ceiling((pointNum - 140) * 0.60));
+                    axisw = 902 - ceil;
+                }
+                if (pointNum >= 210)
+                {
+                    int ceil = Convert.ToInt32(Math.Ceiling((pointNum - 210) * 0.40));
+                    axisw = 908 - ceil;
+                }
+            }
+            #endregion
+
+            #region CT80
+            //CT80
+            if ("W".Equals(flag))
+            {
+                axisw = 868;//
+                if (pointNum >= 10)
+                {
+                    int ceil = Convert.ToInt32(Math.Ceiling((pointNum - 10) * 0.35));
+                    axisw = 868 + ceil;
+                }
+                if (pointNum > 50 && pointNum <= 60)
+                {
+                    int ceil = Convert.ToInt32(Math.Ceiling((pointNum - 51) * 0.50));
+                    axisw = 910 + ceil;
+                }
+                if (pointNum > 60 && pointNum <= 75)
+                {
+                    int ceil = Convert.ToInt32(Math.Ceiling((pointNum - 60) * 0.00));
+                    axisw = 914 - ceil;
+                }
+                if (pointNum > 75 && pointNum <= 110)
+                {
+                    int ceil = Convert.ToInt32(Math.Ceiling((pointNum - 75) * 0.75));
+                    axisw = 914 - ceil;
+                }
+                if (pointNum > 110 && pointNum < 140)
+                {
+                    int ceil = Convert.ToInt32(Math.Ceiling((pointNum - 110) * 0.90));
+                    axisw = 888 - ceil;
+                }
+                if (pointNum >= 140 && pointNum < 210)
+                {
+                    int ceil = Convert.ToInt32(Math.Ceiling((pointNum - 140) * 0.60));
+                    axisw = 902 - ceil;
+                }
+                if (pointNum >= 210)
+                {
+                    int ceil = Convert.ToInt32(Math.Ceiling((pointNum - 210) * 0.40));
+                    axisw = 908 - ceil;
+                }
+            }
+            #endregion
+
+            #region CT100
+            //CT100
+            if ("X".Equals(flag))
+            {
+                axisw = 901;//
+                if (pointNum >= 10)
+                {
+                    int ceil = Convert.ToInt32(Math.Ceiling((pointNum - 10) * 0.35));
+                    axisw = 901 + ceil;
+                }
+                if (pointNum > 30 && pointNum < 50)
+                {
+                    int ceil = Convert.ToInt32(Math.Ceiling((pointNum - 10) * 0.10));
+                    axisw = 901 + ceil;
+                }
+                if (pointNum >= 50 && pointNum <= 60)
+                {
+                    int ceil = Convert.ToInt32(Math.Ceiling((pointNum - 50) * 0.00));
+                    axisw = 895 + ceil;
+                }
+                if (pointNum > 60 && pointNum <= 75)
+                {
+                    int ceil = Convert.ToInt32(Math.Ceiling((pointNum - 60) * 0.00));
+                    axisw = 895 - ceil;
+                }
+                if (pointNum > 75 && pointNum <= 100)
+                {
+                    int ceil = Convert.ToInt32(Math.Ceiling((pointNum - 75) * 0.00));
+                    axisw = 895 - ceil;
+                }
+                if (pointNum > 100 && pointNum <= 140)
+                {
+                    int ceil = Convert.ToInt32(Math.Ceiling((pointNum - 100) * 0.80));
+                    axisw = 895 - ceil;
+                }
+                if (pointNum >= 140 && pointNum < 160)
+                {
+                    int ceil = Convert.ToInt32(Math.Ceiling((pointNum - 140) * 0.45));
+                    axisw = 902 - ceil;
+                }
+                if (pointNum >= 160 && pointNum < 210)
+                {
+                    int ceil = Convert.ToInt32(Math.Ceiling((pointNum - 140) * 0.60));
+                    axisw = 902 - ceil;
+                }
+                if (pointNum >= 210)
+                {
+                    int ceil = Convert.ToInt32(Math.Ceiling((pointNum - 210) * 0.40));
+                    axisw = 908 - ceil;
+                }
+            }
+            #endregion
+
             return axisw * 0.001f;
         }
     }

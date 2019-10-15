@@ -89,7 +89,7 @@ namespace Monitor_HCCS.View
             //设备名称过滤
             string DeviceName = args.Advertisement.LocalName;
 
-            if (!(StringHelper.IsMatch(DeviceName, 9) || StringHelper.IsMatch(DeviceName, 10)))
+            if (!(StringHelper.IsMatch(DeviceName, 9) || StringHelper.IsMatch(DeviceName, 10) || StringHelper.IsMatch(DeviceName, 11)))
                 return;
 
             //地址转为MAC
